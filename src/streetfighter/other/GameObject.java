@@ -1,5 +1,10 @@
 package streetfighter.other;
 
+
+/**
+    * Permet de gérer les coordonnées d'un objet du jeu 
+    * 
+ */
 public abstract class GameObject {
     protected double x, y, width, height;
 

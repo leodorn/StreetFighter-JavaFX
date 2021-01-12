@@ -3,7 +3,12 @@ package streetfighter.other;
 import javafx.geometry.Bounds;
 import javafx.scene.shape.Rectangle;
 
+
+/**
+    * Zone invisible afin de gérer la physique (collision, événements...)
+ */
 public class Hitbox {
+
     private Rectangle rectangle;
 
     public Hitbox(double x, double y, double width, double height) {

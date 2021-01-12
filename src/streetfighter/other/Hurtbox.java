@@ -4,8 +4,16 @@ import streetfighter.Character;
 import streetfighter.FightManager;
 import streetfighter.interfaces.Collidable;
 
+
+/**
+    * Zone invisible créée lors d'une attaque d'un joueur
+    * Permet la gestion de la prise de dégâts
+ */
 public class Hurtbox extends GameObject implements Collidable {
+
+    //Zone invisible
     Hitbox hitbox;
+    //De quel personnage provient l'attaque
     Character owner;
     double damage;
 
@@ -20,6 +28,8 @@ public class Hurtbox extends GameObject implements Collidable {
     public void update() {
         this.hitbox.getRectangle().setX(x);
     }
+
+
 
     @Override
     public void onCollision(GameObject go) {
